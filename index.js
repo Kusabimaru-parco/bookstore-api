@@ -7,8 +7,8 @@ app.use(express.json());
 
 // Sample data: a list of books
 let books = [
-    { id: 1, title: "Book One", author: "Author One" category: "Fiction"},
-    { id: 2, title: "Book Two", author: "Author Two" category: "Non-Fiction"}
+    { id: 1, title: "Book One", author: "Author One", category: "Fiction"},
+    { id: 2, title: "Book Two", author: "Author Two", category: "Non-Fiction"}
 ];
 
 // Route to get all books
