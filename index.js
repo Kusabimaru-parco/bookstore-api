@@ -9,17 +9,38 @@ app.use(express.json());
 let books = [
     { 
         id: 1,
-        title: "Book One",
-        author: "Author One",
+        title: "Kusabimaru",
+        author: "Julian Eric B. Parco",
         category: "Fiction",
         description: "A tale of great swordsman and his journey to the north."
     },
     { 
         id: 2,
-        title: "Book Two",
-        author: "Author Two",
+        title: "Above",
+        author: "Julian Eric B. Parco",
         category: "Non-Fiction",
         description: "Based on an historical event called the pearl harbor."
+    },
+    { 
+        id: 3,
+        title: "Ascent",
+        author: "Julian Eric B. Parco",
+        category: "Fiction",
+        description: "A story of a child of long lost covilization living among with humans."
+    },
+    { 
+        id: 4,
+        title: "Ascent: Light and Dark",
+        author: "Julian Eric B. Parco",
+        category: "Fiction",
+        description: "A sequel to the original book Ascent. When History is forgotten it becomes a lie."
+    },
+    { 
+        id: 5,
+        title: "Cosmic Dream",
+        author: "Julian Eric B. Parco",
+        category: "Fiction",
+        description: "A story of just an ordinary human who is destined to live among the stars."
     }
 ];
 
