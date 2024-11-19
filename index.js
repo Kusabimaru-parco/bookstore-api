@@ -7,8 +7,20 @@ app.use(express.json());
 
 // Sample data: a list of books
 let books = [
-    { id: 1, title: "Book One", author: "Author One", category: "Fiction"},
-    { id: 2, title: "Book Two", author: "Author Two", category: "Non-Fiction"}
+    { 
+        id: 1,
+        title: "Book One",
+        author: "Author One",
+        category: "Fiction",
+        description: "A tale of great swordsman and his journey to the north."
+    },
+    { 
+        id: 2,
+        title: "Book Two",
+        author: "Author Two",
+        category: "Non-Fiction",
+        description: "Based on an historical event called the pearl harbor."
+    }
 ];
 
 // Route to get all books
@@ -32,7 +44,8 @@ app.post('/books', (req, res) => {
         id: books.length + 1,
         title: req.body.title,
         author: req.body.author,
-        category: req.body.category
+        category: req.body.category,
+        description: req.body.description
     };
     books.push(newBook);
     res.status(201).json(newBook);
@@ -44,6 +57,8 @@ app.put('/books/:id', (req, res) => {
     if (book) {
         book.title = req.body.title;
         book.author = req.body.author;
+        book.category = req.body.category;
+        book.description = req.body.description;
         res.json(book);
     } else {
         res.status(404).send('Book not found');
